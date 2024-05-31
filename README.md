@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone this repository
 2. Install the dependencies: `yarn install`
-3. Create an `.env.local` file and fill the environment variables by using the `.env.template`
+3. Create an `.env` file and fill the environment variables by using the `.env.example`
 4. Start the development server: `yarn dev`
 
 ## Deployment
@@ -31,6 +31,7 @@ To deploy this app, just connect your repository to a Vercel project or run `yar
 
 - [Typescript](https://www.typescriptlang.org/) - Main programming language
 - [NextJS](https://nextjs.org/) - The React web framework
+- [Next Auth](https://next-auth.js.org/providers/google) - The provider for Google Authentication
 - [Google Calendar API](https://developers.google.com/calendar/api/guides/overview) - API for events and calendars management
 - [TailwindCSS](https://tailwindcss.com/docs/) - CSS Framework
 
