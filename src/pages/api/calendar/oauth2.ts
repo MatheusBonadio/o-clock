@@ -13,10 +13,11 @@ export async function getOAuth2Client(
   const session = await getServerSession(req, res, options);
 
   const token = await getToken({ req });
+
   if (!session || !token) signIn();
 
-  const accessToken = token?.accessToken as string;
-  const refreshToken = token?.refreshToken as string;
+  const accessToken = token?.access_token as string;
+  const refreshToken = token?.refresh_token as string;
 
   if (!accessToken) throw Error("Access Token not found.");
 
